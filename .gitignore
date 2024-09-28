@@ -30,3 +30,8 @@
 *.exe
 *.out
 *.app
+*.bak
+/Easy/.vs
+/Easy/Easy
+/Easy/x64
+Easy/Easy.vcxproj*
