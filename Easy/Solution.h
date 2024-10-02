@@ -1,6 +1,7 @@
 #pragma once
 
 #include <vector>
+#include <string>
 
 using namespace std;
 
@@ -18,6 +19,10 @@ class Solution
 public:
 	vector<int> runningSum(vector<int>& nums);
 
-    int maxDepth(TreeNode* root);
+    int maxDepth(TreeNode* root);       // recursion
+
+    void moveZeroes(vector<int>& nums);     // use 2 pointers
+
+    bool canConstruct(string ransomNote, string magazine);
 };
 

@@ -16,3 +16,44 @@ int Solution::maxDepth(TreeNode* root) {
         return 0;
     return max(maxDepth(root->left), maxDepth(root->right)) + 1;
 }
+
+void Solution::moveZeroes(vector<int>& nums)
+{
+    if (nums.size() <= 1) {
+        return;
+    }
+
+    int left = 0, right = 0;
+    // find 1st index of 0
+    for (; left < nums.size(); left++) {
+        if (nums[left] == 0)
+            break;
+    }
+    if (left == nums.size()) {
+        // no 0 found
+        return;
+    }
+
+    for (right = left + 1; right < nums.size(); right++) {
+        if (nums[right] != 0) {
+            swap(nums[right], nums[left]);
+            left++;
+        }
+    }
+}
+
+bool Solution::canConstruct(string ransomNote, string magazine)
+{
+    // last index of every char
+    vector<int> lastIndexes(26, 0);
+
+    for (char c : ransomNote) {
+        size_t idx = magazine.find(c, lastIndexes[c - 'a']);
+        if (idx == string::npos)
+            return false;
+
+        // update last idx
+        lastIndexes[c - 'a'] = idx + 1;
+    }
+    return true;
+}
