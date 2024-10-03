@@ -42,6 +42,21 @@ void Solution::moveZeroes(vector<int>& nums)
     }
 }
 
+ListNode* Solution::middleNode(ListNode* head)
+{
+    ListNode* node = head;      // fast pointer
+    ListNode* middle = head;    // slow pointer
+    bool nextMiddle = true;     // flag to stop slow pointer after every 1 move
+    while (node->next) {
+        node = node->next;
+        if (nextMiddle) {
+            middle = middle->next;
+        }
+        nextMiddle = !nextMiddle;
+    }
+    return middle;
+}
+
 bool Solution::canConstruct(string ransomNote, string magazine)
 {
     // last index of every char
