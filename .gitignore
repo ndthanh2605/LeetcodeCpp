@@ -31,7 +31,9 @@
 *.out
 *.app
 *.bak
-/Easy/.vs
+*.vs
 /Easy/Easy
 /Easy/x64
-Easy/Easy.vcxproj*
+*.vcxproj*
+/Medium/Medium
+/Medium/Time2InformAllEmployees/x64
