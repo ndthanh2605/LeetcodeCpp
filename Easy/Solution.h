@@ -35,5 +35,9 @@ public:
 
     bool canConstruct(string ransomNote, string magazine);
 
+    bool isPalindromeUsingArray(ListNode* head);
+
+    bool isPalindrome(ListNode* head);      // use stack, lower performance
+
 };
 

@@ -16,7 +16,15 @@ int main()
     vector<int> input = vector<int>{ 1, 2, 3, 4 };
     vector<int> rs = sln.runningSum(input);
 
-    cout << toString(rs) << endl;
+    //cout << toString(rs) << endl;
+
+    ListNode* tail = new ListNode(1);
+    ListNode* head = new ListNode(2, tail);
+    head = new ListNode(2, head);
+    head = new ListNode(1, head);
+    cout << "done init linked list" << endl;
+
+    cout << sln.isPalindrome(head) << endl;
 
     system("pause");
     return 0;

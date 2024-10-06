@@ -1,5 +1,10 @@
 #include "Solution.h"
 
+#include <iostream>
+#include <stack>
+
+using namespace std;
+
 vector<int> Solution::runningSum(vector<int>& nums)
 {
     int l = nums.size();
@@ -70,5 +75,54 @@ bool Solution::canConstruct(string ransomNote, string magazine)
         // update last idx
         lastIndexes[c - 'a'] = idx + 1;
     }
+    return true;
+}
+
+bool Solution::isPalindromeUsingArray(ListNode* head)
+{
+    vector<int> values;
+    ListNode* tmp = head;
+    while (tmp) {
+        values.push_back(tmp->val);
+        tmp = tmp->next;
+    }
+    cout << endl;
+
+    for (int i = 0, j = values.size() - 1; i < values.size(), j >= 0; i++, j--)
+    {
+        if (i >= j)
+            break;
+        if (values[i] != values[j])
+            return false;
+    }
+
+    return true;
+}
+
+bool Solution::isPalindrome(ListNode* head)
+{
+    stack<int> stack;
+    ListNode* tmp = head;
+    while (tmp) {
+        stack.push(tmp->val);
+        tmp = tmp->next;
+    }
+    
+    int size = stack.size();
+    int v;
+    while (!stack.empty())
+    {
+        if (stack.size() <= (size / 2.0))
+            return true;
+
+        v = stack.top();
+        stack.pop();
+
+        if (v != head->val) {
+            return false;
+        }
+        head = head->next;
+    }
+
     return true;
 }
