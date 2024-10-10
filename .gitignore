@@ -37,3 +37,9 @@
 *.vcxproj*
 /Medium/Medium
 /Medium/Time2InformAllEmployees/x64
+*.tlog
+*.pdb
+*.idb
+*.log
+*.ilk
+*.recipe
