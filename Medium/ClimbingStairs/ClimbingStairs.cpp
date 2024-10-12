@@ -20,13 +20,27 @@ int minCost(vector<int>& costs, int n) {
     return mins[n];
 }
 
+// bottom up approach
 int minCostClimbingStairs(vector<int>& cost) {
-    // top down approach of Dynamic Programming
+    int n = cost.size();
+    if (n < 2)
+        return 0;
+    vector<int> minCost(n);
+    minCost[0] = cost[0];
+    minCost[1] = cost[1];
+    for (int i = 2; i < n; i++) {
+        minCost[i] = cost[i] + min(minCost[i - 1], minCost[i - 2]);
+    }
+    return min(minCost[n - 1], minCost[n - 2]);
+}
+
+// top down approach of Dynamic Programming
+int minCostClimbingStairs_TopDown(vector<int>& cost) {
     cost.push_back(0);
 
     mins = vector<int>(cost.size(), -1);
     int rs = minCost(cost, cost.size()-1);
-    cout << rs;
+    //cout << rs;
     return rs;
 }
 
