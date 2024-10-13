@@ -44,8 +44,20 @@ int minCostClimbingStairs_TopDown(vector<int>& cost) {
     return rs;
 }
 
+
+int climbStairs(int n) {
+    if (n <= 1)
+        return 1;
+    return climbStairs(n - 1) + climbStairs(n - 2);
+}
+
 int main()
 {
+    // test
+    cout << climbStairs(2) << endl;
+    cout << climbStairs(3) << endl;
+
+
     //vector<int> cost = vector<int>({ 10, 15, 20 });
     vector<int> cost = vector<int>({ 1,100,1,1,1,100,1,1,100,1 });
 
