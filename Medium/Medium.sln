@@ -13,6 +13,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "NetworkDelayTime", "Network
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ClimbingStairs", "ClimbingStairs\ClimbingStairs.vcxproj", "{769F5DFC-1699-43A4-A243-3408D7A7A713}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "PartitionEqualSubsetSum", "PartitionEqualSubsetSum\PartitionEqualSubsetSum.vcxproj", "{CC30158A-BB16-4744-A6EC-E539FC03AFAD}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -61,6 +63,14 @@ Global
 		{769F5DFC-1699-43A4-A243-3408D7A7A713}.Release|x64.Build.0 = Release|x64
 		{769F5DFC-1699-43A4-A243-3408D7A7A713}.Release|x86.ActiveCfg = Release|Win32
 		{769F5DFC-1699-43A4-A243-3408D7A7A713}.Release|x86.Build.0 = Release|Win32
+		{CC30158A-BB16-4744-A6EC-E539FC03AFAD}.Debug|x64.ActiveCfg = Debug|x64
+		{CC30158A-BB16-4744-A6EC-E539FC03AFAD}.Debug|x64.Build.0 = Debug|x64
+		{CC30158A-BB16-4744-A6EC-E539FC03AFAD}.Debug|x86.ActiveCfg = Debug|Win32
+		{CC30158A-BB16-4744-A6EC-E539FC03AFAD}.Debug|x86.Build.0 = Debug|Win32
+		{CC30158A-BB16-4744-A6EC-E539FC03AFAD}.Release|x64.ActiveCfg = Release|x64
+		{CC30158A-BB16-4744-A6EC-E539FC03AFAD}.Release|x64.Build.0 = Release|x64
+		{CC30158A-BB16-4744-A6EC-E539FC03AFAD}.Release|x86.ActiveCfg = Release|Win32
+		{CC30158A-BB16-4744-A6EC-E539FC03AFAD}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

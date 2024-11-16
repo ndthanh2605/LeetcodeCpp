@@ -9,7 +9,7 @@ using namespace std;
 class Solution {
 public:
     int searchInsertWithin(vector<int>& nums, int target, int start, int end) {
-        cout << "> search " << target << " in range (" << start << ", " << end << ")" << endl;
+        //cout << "> search " << target << " in range (" << start << ", " << end << ")" << endl;
         int l = end - start + 1;
         if (l == 1) {
             return (nums[start] < target) ? start + 1 : start;

@@ -34,7 +34,7 @@
 *.vs
 /Easy/Easy
 /Easy/x64
-*.vcxproj*
+*.vcxproj.*
 /Medium/Medium
 /Medium/Time2InformAllEmployees/x64
 *.tlog
