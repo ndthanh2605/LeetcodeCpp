@@ -10,7 +10,7 @@ using namespace std;
 
 class Solution {
 public:
-    set<vector<int>> rs;
+    set<vector<int>> tmp;
     vector<int> tmp;
 
     // try select or remove item at idx of nums
@@ -21,7 +21,7 @@ public:
                 tmp.push_back(nums[idx]);
             }
             if (idx == nums.size() - 1) {
-                rs.insert(tmp);
+                tmp.insert(tmp);
             }
             else {
                 Try(nums, idx + 1);
@@ -38,7 +38,7 @@ public:
         sort(nums.begin(), nums.end());
         Try(nums, 0);
 
-        return vector<vector<int>>(rs.begin(), rs.end());
+        return vector<vector<int>>(tmp.begin(), tmp.end());
     }
 };
 

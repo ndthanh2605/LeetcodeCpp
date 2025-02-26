@@ -8,7 +8,7 @@ using namespace std;
 class Solution {
 public:
     int n;
-    vector<int> rs;
+    vector<int> tmp;
     vector<int> finalRs;
     vector<bool> visited;
     int usedCount = 0;
@@ -21,7 +21,7 @@ public:
         }
         cout << endl;
 
-        for (auto& i : rs)
+        for (auto& i : tmp)
         {
             cout << " " << i;
         }
@@ -31,7 +31,7 @@ public:
     void Try(int idx) {
         if (found)
             return;
-        if (rs[idx] != 0 && idx < (2 * n - 1)) {
+        if (tmp[idx] != 0 && idx < (2 * n - 1)) {
             Try(idx + 1);
             return;
         }
@@ -46,7 +46,7 @@ public:
 
             int nextIdx = idx + i;
             if (i != 1) {
-                if (nextIdx >= (2 * n - 1) || rs[nextIdx] != 0)
+                if (nextIdx >= (2 * n - 1) || tmp[nextIdx] != 0)
                     continue;
             }
 
@@ -54,19 +54,19 @@ public:
             int prevCount = usedCount;
             usedCount++;
             visited[i] = true;
-            rs[idx] = i;
+            tmp[idx] = i;
             if (i != 1) {
-                rs[nextIdx] = i;
+                tmp[nextIdx] = i;
             }
 
             //print();
             if (usedCount == n || idx == 2 * n - 1) {
                 // end case
-                if (*min_element(rs.begin(), rs.end()) > 0) {
+                if (*min_element(tmp.begin(), tmp.end()) > 0) {
                     found = true;
                     cout << "FOUND!!!" << endl;
                     print();
-                    finalRs = rs;
+                    finalRs = tmp;
                     return;
                 }
             }
@@ -77,9 +77,9 @@ public:
             // backtrack
             usedCount = prevCount;
             visited[i] = false;
-            rs[idx] = 0;
+            tmp[idx] = 0;
             if (i != 1) {
-                rs[nextIdx] = 0;
+                tmp[nextIdx] = 0;
             }
             cout << " > backtrack idx " << idx << ": " << i << endl;
             //print();
@@ -92,7 +92,7 @@ public:
         }
 
         this->n = n;
-        rs = vector<int>(2 * n - 1, 0);
+        tmp = vector<int>(2 * n - 1, 0);
         visited = vector<bool>(n+1, false);
         Try(0);
 

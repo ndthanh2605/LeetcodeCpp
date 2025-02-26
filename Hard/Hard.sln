@@ -9,6 +9,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "TrappingRainWater", "Trappi
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ShortestSubarrayWithSumAtLeastK_862", "ShortestSubarrayWithSumAtLeastK_862\ShortestSubarrayWithSumAtLeastK_862.vcxproj", "{DA114BD6-06B3-4301-99FA-CB88FDEF6746}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "RecoverTreeFromPreOrder_1028", "RecoverTreeFromPreOrder_1028\RecoverTreeFromPreOrder_1028.vcxproj", "{78F0C247-7791-4328-A1F2-ED81414BA427}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -41,6 +43,14 @@ Global
 		{DA114BD6-06B3-4301-99FA-CB88FDEF6746}.Release|x64.Build.0 = Release|x64
 		{DA114BD6-06B3-4301-99FA-CB88FDEF6746}.Release|x86.ActiveCfg = Release|Win32
 		{DA114BD6-06B3-4301-99FA-CB88FDEF6746}.Release|x86.Build.0 = Release|Win32
+		{78F0C247-7791-4328-A1F2-ED81414BA427}.Debug|x64.ActiveCfg = Debug|x64
+		{78F0C247-7791-4328-A1F2-ED81414BA427}.Debug|x64.Build.0 = Debug|x64
+		{78F0C247-7791-4328-A1F2-ED81414BA427}.Debug|x86.ActiveCfg = Debug|Win32
+		{78F0C247-7791-4328-A1F2-ED81414BA427}.Debug|x86.Build.0 = Debug|Win32
+		{78F0C247-7791-4328-A1F2-ED81414BA427}.Release|x64.ActiveCfg = Release|x64
+		{78F0C247-7791-4328-A1F2-ED81414BA427}.Release|x64.Build.0 = Release|x64
+		{78F0C247-7791-4328-A1F2-ED81414BA427}.Release|x86.ActiveCfg = Release|Win32
+		{78F0C247-7791-4328-A1F2-ED81414BA427}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

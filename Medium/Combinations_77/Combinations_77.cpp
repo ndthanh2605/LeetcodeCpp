@@ -9,7 +9,7 @@ using namespace std;
 
 class Solution {
 public:
-    vector<vector<int>> rs;
+    vector<vector<int>> tmp;
     vector<bool> visited;
     vector<int> tmp;
 
@@ -25,7 +25,7 @@ public:
             tmp[idx] = i;
             
             if (idx == k - 1) {
-                rs.push_back(tmp);
+                tmp.push_back(tmp);
             }
             else {
                 Try(n, k, idx + 1);
@@ -42,7 +42,7 @@ public:
 
         Try(n, k, 0);
 
-        return rs;
+        return tmp;
     }
 };
 

@@ -8,26 +8,26 @@ using namespace std;
 class Solution {
 public:
     int n;
-    vector<int> indexes;
+    vector<int> postIdx;
     int count = 0;
 
     void dfs(int s, vector<vector<int>>& isConnected) {
-        indexes[s] = count;
+        postIdx[s] = count;
 
         for (int i = 0; i < n; i++)
         {
-            if (indexes[i] < 0 && isConnected[s][i])
+            if (postIdx[i] < 0 && isConnected[s][i])
                 dfs(i, isConnected);
         }
     }
 
     int findCircleNum(vector<vector<int>>& isConnected) {
         n = isConnected[0].size();
-        indexes = vector<int>(n, -1);
+        postIdx = vector<int>(n, -1);
 
         for (int i = 0; i < n; i++)
         {
-            if (indexes[i] < 0) {
+            if (postIdx[i] < 0) {
                 dfs(i, isConnected);
                 count++;
             }
