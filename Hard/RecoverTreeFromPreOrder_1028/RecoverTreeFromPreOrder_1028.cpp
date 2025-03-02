@@ -54,7 +54,10 @@ public:
                     nodes.pop();
                 }
                 TreeNode* parent = nodes.top();
-                parent->right = node;
+                if (parent->left)
+                    parent->right = node;
+                else
+                    parent->left = node;
                 nodes.push(node);
 
                 dashes = 0;

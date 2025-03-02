@@ -15,6 +15,10 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "1092_ShortestCommonSuperseq
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "84_LargestRectangle_Histogram", "..\Stack\84_LargestRectangle_Histogram\84_LargestRectangle_Histogram.vcxproj", "{7A11C969-EB6A-43E5-BF23-946D4D62B3DE}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "23. Merge k Sorted Lists", "..\LinkedList\23. Merge k Sorted Lists\23. Merge k Sorted Lists.vcxproj", "{DA289A5E-01FA-4E8B-96EE-1ABC1A0DCBFF}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "679. 24 Game", "..\Backtrack\679. 24 Game\679. 24 Game.vcxproj", "{D1CCBD90-B383-459B-9EE5-361928220DA9}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -71,6 +75,22 @@ Global
 		{7A11C969-EB6A-43E5-BF23-946D4D62B3DE}.Release|x64.Build.0 = Release|x64
 		{7A11C969-EB6A-43E5-BF23-946D4D62B3DE}.Release|x86.ActiveCfg = Release|Win32
 		{7A11C969-EB6A-43E5-BF23-946D4D62B3DE}.Release|x86.Build.0 = Release|Win32
+		{DA289A5E-01FA-4E8B-96EE-1ABC1A0DCBFF}.Debug|x64.ActiveCfg = Debug|x64
+		{DA289A5E-01FA-4E8B-96EE-1ABC1A0DCBFF}.Debug|x64.Build.0 = Debug|x64
+		{DA289A5E-01FA-4E8B-96EE-1ABC1A0DCBFF}.Debug|x86.ActiveCfg = Debug|Win32
+		{DA289A5E-01FA-4E8B-96EE-1ABC1A0DCBFF}.Debug|x86.Build.0 = Debug|Win32
+		{DA289A5E-01FA-4E8B-96EE-1ABC1A0DCBFF}.Release|x64.ActiveCfg = Release|x64
+		{DA289A5E-01FA-4E8B-96EE-1ABC1A0DCBFF}.Release|x64.Build.0 = Release|x64
+		{DA289A5E-01FA-4E8B-96EE-1ABC1A0DCBFF}.Release|x86.ActiveCfg = Release|Win32
+		{DA289A5E-01FA-4E8B-96EE-1ABC1A0DCBFF}.Release|x86.Build.0 = Release|Win32
+		{D1CCBD90-B383-459B-9EE5-361928220DA9}.Debug|x64.ActiveCfg = Debug|x64
+		{D1CCBD90-B383-459B-9EE5-361928220DA9}.Debug|x64.Build.0 = Debug|x64
+		{D1CCBD90-B383-459B-9EE5-361928220DA9}.Debug|x86.ActiveCfg = Debug|Win32
+		{D1CCBD90-B383-459B-9EE5-361928220DA9}.Debug|x86.Build.0 = Debug|Win32
+		{D1CCBD90-B383-459B-9EE5-361928220DA9}.Release|x64.ActiveCfg = Release|x64
+		{D1CCBD90-B383-459B-9EE5-361928220DA9}.Release|x64.Build.0 = Release|x64
+		{D1CCBD90-B383-459B-9EE5-361928220DA9}.Release|x86.ActiveCfg = Release|Win32
+		{D1CCBD90-B383-459B-9EE5-361928220DA9}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

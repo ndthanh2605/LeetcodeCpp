@@ -68,7 +68,7 @@ public:
             int l = smL[i] + 1;
             int r = smR[i];
             long sum = prefix[r] - prefix[l];
-            cout << " > product at " << i << ": " << sum << " x " << nums[i] << " -> " << (nums[i] * sum) << endl;
+            //cout << " > product at " << i << ": " << sum << " x " << nums[i] << " -> " << (nums[i] * sum) << endl;
             tmpMax = max(tmpMax, nums[i] * sum);
         }
         int rs = tmpMax % (int)(1e9 + 7);
