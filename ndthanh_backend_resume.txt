@@ -1,0 +1,112 @@
+\documentclass{resume}
+\usepackage[hidelinks]{hyperref}
+\usepackage{lipsum}
+
+\name{Thanh Nguyen Dac}
+\contact{\href{address:Tay Ho, Hanoi}{Tay Ho, Hanoi}}
+\contact{\href{tel:+84-363-769-237}{+84-363-769-237}}
+\contact{\href{mailto:ndthanh2605@gmail.com}{ndthanh2605@gmail.com}}
+\contact{\href{https://www.linkedin.com/in/ndthanh2605}{linkedin.com/in/ndthanh2605}}
+
+\begin{document}
+\makeheader
+
+\hfill
+
+\begin{ResumeSection}{education}
+    \begin{ResumeSubsection}{org={VNU-UET (University of Engineering and Technology)},position={Master in Information Technology},duration={2014-2017}}
+    \end{ResumeSubsection}
+    
+    \begin{ResumeSubsection}{org={VNU-UET (University of Engineering and Technology)},position={Bachelor in Computer Science},duration={2009-2013}}
+    \end{ResumeSubsection}
+\end{ResumeSection}
+
+\begin{ResumeSection}{skills}
+    \newcommand{\skill}[2]{\textbf{#1} - #2}
+        \begin{itemize}
+            \item \skill{Language}{C/C++ (12 years), Java}
+            \item \skill{DBMS}{MS SQL, MySQL}
+            \item \skill{Tool}{Visual Studio, JetBrains, Jenkins, Qt Framework}
+            \item \skill{Platform}{Windows, Samsung Cloud Platform, Linux}
+            \item \skill{Other}{TOEIC Speaking 150/200, DSA (Samsung SW Advanced)}
+        \end{itemize}
+\end{ResumeSection}
+
+\begin{ResumeSection}{experience}
+    \begin{ResumeSubsection}{org=BACKEND TECHLEAD,tech={Windows,C++},position={Samsung SDS Vietnam},duration=2023-now}
+        \begin{itemize}
+            \item \textbf{Project: Endpoint Security} $|$ \textit{C++, Windows Server}
+            \begin{itemize}
+                \item Lead a team of 07 middle/senior engineers in maintaining and enhancing backend services of Samsung’s Endpoint Security system, approximately 30 services for various security functions. \\
+                Focusing on ensuring system reliability, high availability and maintaining strict security requirements.
+                \item Maintain and develop sub-projects that served as interfaces for interacting with external systems.
+                \item Support the management of 4 cloud servers.
+                \item Maintain and configure Jenkins jobs for CI (automated Coverity scans and project builds).
+                \item Train middle developers on business logic, codebase structure and backend workflows.
+                \item Perform documentation and code reviews.
+            \end{itemize}
+            \item \textbf{Project: New Endpoint Suit} $|$ \textit{Microservices, Java Spring Boot, REST API}
+            \begin{itemize}
+                \item Maintain a sub-project for linkage and data synchronization between 2 systems.
+                \item Assist in the detailed design and development of the new Endpoint Security Suit, to ensure that feature logic follows the existing system.
+                \item Train new team members on business logic and workflows of the existing system.
+            \end{itemize}
+        \end{itemize}
+    \end{ResumeSubsection}
+
+    \begin{ResumeSubsection}{org={TECHNICAL LEADER},position={Viettel High Technology Industries Corp.},duration={2020-2022}}
+        \begin{itemize}
+            \item \textbf{Project: XR-Platform} $|$ \textit{Qt C++, Windows}
+            \begin{itemize}
+                \item Led the design and development of the eXtended Reality (XR) Platform as the common platform for all VHT simulation systems. \\
+                Core features of simulation platform include digital 2D/3D maps, scenario data, command and report mechanisms, and simulation functionalities.
+                \item Maintained and developed the simulation server (Windows Server).
+                \item Refactored and modularized source code for future extension and maintenance.
+                \item Redesigned and refactored existing systems to integrate with new simulation platform, enhancing maintainability and scalability.
+                \item Performed documentation and code reviews.
+            \end{itemize}
+            
+            \item \textbf{Project: UAV Swarm Payload Control System} $|$ \textit{Qt/QML, Linux}
+            \begin{itemize}
+                \item Led the development of a responsive desktop application with touch screens and joystick support, using QML, C++, JavaScript with Flux architecture.
+                \item Integrated the tactical planning on digital maps into the system, and enabled real-time position display for UAVs under control to enhance operational efficiency.
+                \item Collaborated with hardware and embedded developers to ensure seamless integration of application features for controlling a UAV swarm.
+            \end{itemize}
+
+            \item \textbf{Project: Virtual Sand Table 4.0} $|$ \textit{Qt C++, Windows}
+            \begin{itemize}
+                \item TBD
+            \end{itemize}
+
+        \end{itemize}
+    \end{ResumeSubsection}
+
+    \begin{ResumeSubsection}{org={SENIOR SOFTWARE ENGINEER},position={Viettel High Technology Industries Corp.},duration={2017-2019}}
+        \begin{itemize}
+            \item \textbf{Projects: Military Simulation Systems} $|$ \textit{Qt/QML, C++, Windows}
+            \begin{itemize}
+                \item Served as the main technical engineer in a team of 06 members, developing multiple military simulation systems for various brances which support tactical planning on digital maps and training for commanding staff members. 
+                \item Oversaw system design and development to ensure accuracy and usability.
+                \item Collaborated with UI/UX designers, simulation engineers, and military specialists to develop user-friendly systems that deliver realistic experiences.
+            \end{itemize}
+        \end{itemize}
+    \end{ResumeSubsection}
+
+    \begin{ResumeSubsection}{org={SOFTWARE ENGINEER},position={Viettel High Technology Industries Corp.},duration={2013-2017}}
+        \begin{itemize}
+            \item \textbf{Projects: Military Systems for C4I and Surveilance} $|$ \textit{C++, Java, Linux}
+        \end{itemize}
+
+    \end{ResumeSubsection}
+\end{ResumeSection}
+
+\begin{ResumeSection}{projects}
+    \begin{itemize}
+        \item Market Price Aggregator $|$ \textit{Golang, gRPC} \hfill\em{2025}
+        \begin{itemize}
+            \item \textnormal{Fetch real-time market data from crypto exchanges using Golang and gRPC.}
+        \end{itemize}
+    \end{itemize}
+\end{ResumeSection}
+
+\end{document}

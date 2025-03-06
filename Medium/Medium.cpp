@@ -2,6 +2,10 @@
 #include <iostream>
 #include <vector>
 #include <queue>
+#include <stack>
+#include <unordered_map>
+#include <functional>
+#include <numeric>
 
 using namespace std;
 
