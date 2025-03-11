@@ -127,6 +127,12 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "CountingSort", "..\Sorting\
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "451. Sort Characters By Frequency", "..\Sorting\451. Sort Characters By Frequency\451. Sort Characters By Frequency.vcxproj", "{E9159BC6-B173-4D95-9B48-A4755683D183}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "3306. Count of Substrings Containing Every Vowel and K Consonants II", "..\SlidingWindow\3306. Count of Substrings Containing Every Vowel and K Consonants II\3306. Count of Substrings Containing Every Vowel and K Consonants II.vcxproj", "{973877A3-F553-44C2-B5B8-032F29035935}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "1156. Swap For Longest Repeated Character Substring", "..\SlidingWindow\1156. Swap For Longest Repeated Character Substring\1156. Swap For Longest Repeated Character Substring.vcxproj", "{7E3D8C78-0C87-4966-B6FE-C169F6672C2A}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "2121. Intervals Between Identical Elements", "..\PrefixSum\2121. Intervals Between Identical Elements\2121. Intervals Between Identical Elements.vcxproj", "{5DFD61F1-4059-45A9-A4CD-448F69F7A9DE}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -615,6 +621,30 @@ Global
 		{E9159BC6-B173-4D95-9B48-A4755683D183}.Release|x64.Build.0 = Release|x64
 		{E9159BC6-B173-4D95-9B48-A4755683D183}.Release|x86.ActiveCfg = Release|Win32
 		{E9159BC6-B173-4D95-9B48-A4755683D183}.Release|x86.Build.0 = Release|Win32
+		{973877A3-F553-44C2-B5B8-032F29035935}.Debug|x64.ActiveCfg = Debug|x64
+		{973877A3-F553-44C2-B5B8-032F29035935}.Debug|x64.Build.0 = Debug|x64
+		{973877A3-F553-44C2-B5B8-032F29035935}.Debug|x86.ActiveCfg = Debug|Win32
+		{973877A3-F553-44C2-B5B8-032F29035935}.Debug|x86.Build.0 = Debug|Win32
+		{973877A3-F553-44C2-B5B8-032F29035935}.Release|x64.ActiveCfg = Release|x64
+		{973877A3-F553-44C2-B5B8-032F29035935}.Release|x64.Build.0 = Release|x64
+		{973877A3-F553-44C2-B5B8-032F29035935}.Release|x86.ActiveCfg = Release|Win32
+		{973877A3-F553-44C2-B5B8-032F29035935}.Release|x86.Build.0 = Release|Win32
+		{7E3D8C78-0C87-4966-B6FE-C169F6672C2A}.Debug|x64.ActiveCfg = Debug|x64
+		{7E3D8C78-0C87-4966-B6FE-C169F6672C2A}.Debug|x64.Build.0 = Debug|x64
+		{7E3D8C78-0C87-4966-B6FE-C169F6672C2A}.Debug|x86.ActiveCfg = Debug|Win32
+		{7E3D8C78-0C87-4966-B6FE-C169F6672C2A}.Debug|x86.Build.0 = Debug|Win32
+		{7E3D8C78-0C87-4966-B6FE-C169F6672C2A}.Release|x64.ActiveCfg = Release|x64
+		{7E3D8C78-0C87-4966-B6FE-C169F6672C2A}.Release|x64.Build.0 = Release|x64
+		{7E3D8C78-0C87-4966-B6FE-C169F6672C2A}.Release|x86.ActiveCfg = Release|Win32
+		{7E3D8C78-0C87-4966-B6FE-C169F6672C2A}.Release|x86.Build.0 = Release|Win32
+		{5DFD61F1-4059-45A9-A4CD-448F69F7A9DE}.Debug|x64.ActiveCfg = Debug|x64
+		{5DFD61F1-4059-45A9-A4CD-448F69F7A9DE}.Debug|x64.Build.0 = Debug|x64
+		{5DFD61F1-4059-45A9-A4CD-448F69F7A9DE}.Debug|x86.ActiveCfg = Debug|Win32
+		{5DFD61F1-4059-45A9-A4CD-448F69F7A9DE}.Debug|x86.Build.0 = Debug|Win32
+		{5DFD61F1-4059-45A9-A4CD-448F69F7A9DE}.Release|x64.ActiveCfg = Release|x64
+		{5DFD61F1-4059-45A9-A4CD-448F69F7A9DE}.Release|x64.Build.0 = Release|x64
+		{5DFD61F1-4059-45A9-A4CD-448F69F7A9DE}.Release|x86.ActiveCfg = Release|Win32
+		{5DFD61F1-4059-45A9-A4CD-448F69F7A9DE}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
