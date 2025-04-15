@@ -25,9 +25,9 @@
     \newcommand{\skill}[2]{\textbf{#1} - #2}
         \begin{itemize}
             \item \skill{Language}{C/C++ (12 years), Java}
-            \item \skill{DBMS}{MS SQL, MySQL}
-            \item \skill{Tool}{Visual Studio, JetBrains, Jenkins, Qt Framework}
-            \item \skill{Platform}{Windows, Samsung Cloud Platform, Linux}
+            \item \skill{DBMS}{Microsoft SQL Server, MySQL}
+            \item \skill{Tool}{Visual Studio, Qt Framework, Jenkins, Coverity}
+            \item \skill{Platform}{Windows, Linux}
             \item \skill{Other}{TOEIC Speaking 150/200, DSA (Samsung SW Advanced)}
         \end{itemize}
 \end{ResumeSection}
@@ -37,7 +37,7 @@
         \begin{itemize}
             \item \textbf{Project: Endpoint Security} $|$ \textit{C++, Windows Server}
             \begin{itemize}
-                \item Lead a team of 07 middle/senior engineers in maintaining and enhancing backend services of Samsung’s Endpoint Security system, approximately 30 services for various security functions. \\
+                \item Lead a team of 06 middle engineers in enhancing and maintaining backend services of Samsung’s Endpoint Security system, approximately 30 services for various security functions. \\
                 Focusing on ensuring system reliability, high availability and maintaining strict security requirements.
                 \item Maintain and develop sub-projects that served as interfaces for interacting with external systems.
                 \item Support the management of 4 cloud servers.
@@ -47,7 +47,7 @@
             \end{itemize}
             \item \textbf{Project: New Endpoint Suit} $|$ \textit{Microservices, Java Spring Boot, REST API}
             \begin{itemize}
-                \item Maintain a sub-project for linkage and data synchronization between 2 systems.
+                \item Maintain sub-projects for linkage and data synchronization between 2 systems.
                 \item Assist in the detailed design and development of the new Endpoint Security Suit, to ensure that feature logic follows the existing system.
                 \item Train new team members on business logic and workflows of the existing system.
             \end{itemize}
@@ -58,24 +58,26 @@
         \begin{itemize}
             \item \textbf{Project: XR-Platform} $|$ \textit{Qt C++, Windows}
             \begin{itemize}
-                \item Led the design and development of the eXtended Reality (XR) Platform as the common platform for all VHT simulation systems. \\
-                Core features of simulation platform include digital 2D/3D maps, scenario data, command and report mechanisms, and simulation functionalities.
+                \item Led a team of 06 engineers in developing the eXtended Reality (XR) Platform, which is served as the common platform for all simulation systems of Modeling and Simulation Institute. \\
+                Designed and implemented core features of the XR platform, including digital 2D/3D maps, scenario data, command and report mechanisms, and simulation functionalities.
                 \item Maintained and developed the simulation server (Windows Server).
                 \item Refactored and modularized source code for future extension and maintenance.
                 \item Redesigned and refactored existing systems to integrate with new simulation platform, enhancing maintainability and scalability.
                 \item Performed documentation and code reviews.
             \end{itemize}
             
-            \item \textbf{Project: UAV Swarm Payload Control System} $|$ \textit{Qt/QML, Linux}
+            \item \textbf{Project: UAV Swarm Payload Control System} $|$ \textit{Qt/QML, C++, Linux}
             \begin{itemize}
-                \item Led the development of a responsive desktop application with touch screens and joystick support, using QML, C++, JavaScript with Flux architecture.
+                \item Led a team of 04 engineers in deloping a responsive desktop application with touch screens and joystick support.
                 \item Integrated the tactical planning on digital maps into the system, and enabled real-time position display for UAVs under control to enhance operational efficiency.
                 \item Collaborated with hardware and embedded developers to ensure seamless integration of application features for controlling a UAV swarm.
             \end{itemize}
 
-            \item \textbf{Project: Virtual Sand Table 4.0} $|$ \textit{Qt C++, Windows}
+            \item \textbf{Project: Virtual Sand Table 4.0} $|$ \textit{Qt/QML, C++, Windows}
             \begin{itemize}
-                \item TBD
+                \item Led a team of 06 engineers in developing a tactical training system for military branches, including desktop and interactive applications which are designed for a 55" multi touch table. \\
+                The system supported the expansion of an additional touch table to enhance supervision and assessment during training sessions.
+                \item Collaborated with military lecturers and specialists to build educational materials for training commanding officers
             \end{itemize}
 
         \end{itemize}
@@ -83,7 +85,7 @@
 
     \begin{ResumeSubsection}{org={SENIOR SOFTWARE ENGINEER},position={Viettel High Technology Industries Corp.},duration={2017-2019}}
         \begin{itemize}
-            \item \textbf{Projects: Military Simulation Systems} $|$ \textit{Qt/QML, C++, Windows}
+            \item \textbf{Projects: Military Simulation Systems} $|$ \textit{Qt C++, Windows}
             \begin{itemize}
                 \item Served as the main technical engineer in a team of 06 members, developing multiple military simulation systems for various brances which support tactical planning on digital maps and training for commanding staff members. 
                 \item Oversaw system design and development to ensure accuracy and usability.
@@ -98,15 +100,6 @@
         \end{itemize}
 
     \end{ResumeSubsection}
-\end{ResumeSection}
-
-\begin{ResumeSection}{projects}
-    \begin{itemize}
-        \item Market Price Aggregator $|$ \textit{Golang, gRPC} \hfill\em{2025}
-        \begin{itemize}
-            \item \textnormal{Fetch real-time market data from crypto exchanges using Golang and gRPC.}
-        \end{itemize}
-    \end{itemize}
 \end{ResumeSection}
 
 \end{document}

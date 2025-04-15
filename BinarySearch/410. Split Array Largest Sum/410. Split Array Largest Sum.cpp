@@ -42,6 +42,7 @@ public:
                     }
                     else {
                         curSum += nums[i];
+                        INT_MAX
                     }
                 }
                 cout << " > check subs of sum " << sum << ":" << cnt << endl;

@@ -7,13 +7,13 @@ public:
         n = nums.size();
         if (n > 0) {
 			tree = vector<int>(4 * n);
-            buildTree(nums, 0, 0, n - 1);
+            buildTree(nums, 0, n - 1, 0);
         };
     }
 
     void buildTree(const vector<int>& nums, int left, int right, int idx) {
         if (left == right) {
-			tree[idx] = nums[idx];
+			tree[idx] = nums[left];
 			return;
 		}
 		int mid = (left + right) / 2;
@@ -23,7 +23,7 @@ public:
     }
 	
 	void query(int left, int right, int idx, int qleft, int qright) {
-		if (left > qright || qright < left) {
+		if (right < qleft || qright < left) {
 			return;
 		}
 		if (qleft <= left && right <= qright) {
