@@ -4,21 +4,21 @@ bool isBipartite(vector<vector<int>>& graph) {
 
     bool hasOddCircle = false;
     function<void(int, int)> dfs = [&](int node, int c) -> void
-        {
-            if (hasOddCircle)
-                return;
+	{
+		if (hasOddCircle)
+			return;
 
-            color[node] = c;
-            for (auto& u : graph[node]) {
-                if (color[u] >= 0 && color[u] == color[node]) {
-                    hasOddCircle = true;
-                    return;
-                }
-                else if (color[u] < 0) {        // not visited
-                    dfs(u, 1 - c);
-                }
-            }
-        };
+		color[node] = c;
+		for (auto& u : graph[node]) {
+			if (color[u] >= 0 && color[u] == color[node]) {
+				hasOddCircle = true;
+				return;
+			}
+			if (color[u] < 0) {        // not visited
+				dfs(u, 1 - c);
+			}
+		}
+	};
 
     for (int i = 0; i < n; i++) {
         if (color[i] < 0)

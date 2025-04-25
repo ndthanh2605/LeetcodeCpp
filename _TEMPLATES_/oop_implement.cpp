@@ -4,3 +4,9 @@ friend ostream& operator<<(ostream& os, Box& box) {
 	return os;
 }
 
+
+// get input by line
+string line;
+while (getline(cin, line)) {
+	//
+}
