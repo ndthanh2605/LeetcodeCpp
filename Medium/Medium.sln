@@ -143,6 +143,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "304. Range Sum Query 2D - I
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "SplitPrimes", "..\DynamicProgramming\SplitPrimes\SplitPrimes.vcxproj", "{3E1E1DF9-7D05-4BDE-B39E-8E5A515AEC85}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "HkR_AttributeParse", "..\HkR_AttributeParse\HkR_AttributeParse.vcxproj", "{E1FC4A5C-9B7B-44B3-8CA7-B00CE66AC594}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -695,6 +697,14 @@ Global
 		{3E1E1DF9-7D05-4BDE-B39E-8E5A515AEC85}.Release|x64.Build.0 = Release|x64
 		{3E1E1DF9-7D05-4BDE-B39E-8E5A515AEC85}.Release|x86.ActiveCfg = Release|Win32
 		{3E1E1DF9-7D05-4BDE-B39E-8E5A515AEC85}.Release|x86.Build.0 = Release|Win32
+		{E1FC4A5C-9B7B-44B3-8CA7-B00CE66AC594}.Debug|x64.ActiveCfg = Debug|x64
+		{E1FC4A5C-9B7B-44B3-8CA7-B00CE66AC594}.Debug|x64.Build.0 = Debug|x64
+		{E1FC4A5C-9B7B-44B3-8CA7-B00CE66AC594}.Debug|x86.ActiveCfg = Debug|Win32
+		{E1FC4A5C-9B7B-44B3-8CA7-B00CE66AC594}.Debug|x86.Build.0 = Debug|Win32
+		{E1FC4A5C-9B7B-44B3-8CA7-B00CE66AC594}.Release|x64.ActiveCfg = Release|x64
+		{E1FC4A5C-9B7B-44B3-8CA7-B00CE66AC594}.Release|x64.Build.0 = Release|x64
+		{E1FC4A5C-9B7B-44B3-8CA7-B00CE66AC594}.Release|x86.ActiveCfg = Release|Win32
+		{E1FC4A5C-9B7B-44B3-8CA7-B00CE66AC594}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

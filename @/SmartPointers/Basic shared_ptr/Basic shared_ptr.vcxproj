@@ -21,8 +21,8 @@
   <PropertyGroup Label="Globals">
     <VCProjectVersion>17.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
-    <ProjectGuid>{3ee4e8b3-70ba-4204-908b-f52a6a5486d0}</ProjectGuid>
-    <RootNamespace>DPString</RootNamespace>
+    <ProjectGuid>{34b2be37-71b6-4746-8b01-983551a1af25}</ProjectGuid>
+    <RootNamespace>Basicsharedptr</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
@@ -127,7 +127,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="Template.cpp" />
+    <ClCompile Include="Basic shared_ptr.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

@@ -21,8 +21,8 @@
   <PropertyGroup Label="Globals">
     <VCProjectVersion>17.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
-    <ProjectGuid>{3ee4e8b3-70ba-4204-908b-f52a6a5486d0}</ProjectGuid>
-    <RootNamespace>DPString</RootNamespace>
+    <ProjectGuid>{9a3a86a0-6120-41d2-a8fb-810dad0de1e0}</ProjectGuid>
+    <RootNamespace>PrimePartitioning</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
@@ -127,7 +127,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="Template.cpp" />
+    <ClCompile Include="Prime Partitioning.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
