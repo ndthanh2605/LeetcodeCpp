@@ -18,7 +18,7 @@ public:
     }
 
     ~Resource() {
-        cout << "Resource " << mId << " destroyed" << endl;
+        cout << "Resource " << mId << " destroyed!!!" << endl;
     }
 
     void use() {

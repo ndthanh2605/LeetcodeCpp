@@ -45,53 +45,33 @@ public:
         sieve();
 
         int n = s.length();
-        // dp(idx, state)
-        // if state is NOT prime => dp(idx + 1, state + s[idx])
-        // else => plus dp(idx + 1, s[idx])
-        // base case : idx == n, return 1 if state is prime, else return 0
+        // dp(idx) : try next prime by len = [1..(n - idx)]
+        // base case : idx == n => 1
 
-        map<pair<int, string>, int> mem;
-        vector<vector<string>> ans;
-        function<int(int, string, vector<string>)> dp = [&](int idx, string state, vector<string> splits) -> int
+        vector<int> m(n + 1, -1);
+        function<int(int)> dp = [&](int idx) -> int
             {
-                // check valid
-                if (!valid(state))
+                if (idx == n)
+                    return 1;
+                if (s[idx] == '0')
                     return 0;
 
-                cout << "check : " << idx << " " << state << " " << splits.size() << endl;
-                // check prime
-                bool p = primes[stoi(state)];
-                if (idx == n) {
-                    if (p) {
-                        splits.push_back(state);
-                        ans.push_back(splits);
-                        cout << " > end case : " << state << endl;
+                int& rs = m[idx];
+                if (rs > -1)
+                    return rs;
+
+                rs = 0;
+                for (int len = 1; len < 7; len++) {
+                    if (len + idx > n)
+                        break;
+                    if (primes[stoi(s.substr(idx, len))]) {
+                        rs += dp(idx + len);
                     }
-                    return p ? 1 : 0;
                 }
-        
-                pair<int, string> key = { idx, state };
-                if (mem.count(key))
-                    return mem[key];
-
-                string _state = state + s[idx];
-                int rs = dp(idx + 1, _state, splits);
-                if (p) {
-                    splits.push_back(state);
-                    int tmp = dp(idx + 1, s.substr(idx, 1), splits);
-                    rs += tmp;
-                }
-                return mem[key] = rs;
+                return rs;
             };
-
-        int rs = dp(1, s.substr(0, 1), {});
-        for (auto& splits : ans) {
-            for (auto& s : splits)
-                cout << s << " ";
-            cout << endl;
-        }
-        cout << endl;
-
+        
+        int rs = dp(0);
         return rs;
     }
 };
@@ -99,10 +79,10 @@ public:
 int main()
 {
     Solution sln;
-    //cout << sln.splitPrimes("11373") << endl;
-    //cout << sln.splitPrimes("011") << endl;
-    //cout << sln.splitPrimes("1234") << endl;
-    //cout << sln.splitPrimes("113") << endl;
+    cout << sln.splitPrimes("11373") << endl;
+    cout << sln.splitPrimes("011") << endl;
+    cout << sln.splitPrimes("1234") << endl;
+    cout << sln.splitPrimes("113") << endl;
     cout << sln.splitPrimes("2357") << endl;
 
     return 0;
